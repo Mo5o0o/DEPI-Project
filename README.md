@@ -14,18 +14,15 @@ Sales-Forecasting-Project/
 ├── data/
 │   ├── raw/                 # Raw dataset files
 │   └── processed/           # Cleaned & transformed datasets
+│
 ├── notebooks/
 │   ├── 1_EDA.ipynb
-│   ├── 2_Feature_Engineering.ipynb
-│   ├── 3_Modeling.ipynb
+│   ├── 2_Modeling.ipynb
 │   └── 4_Deployment.ipynb
-├── models/                 # Trained model files (e.g., .pkl)
-├── src/
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   └── utils.py
+├── models/                 # Trained model files (pkl)
+│
 ├── app/
-│   └── app.py              # Streamlit or Flask app
+│   └── app.py              # Streamlit
 ├── requirements.txt
 └── report/
     ├── Final_Report.pdf
