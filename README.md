@@ -26,6 +26,7 @@ Sales-Forecasting-Project/
 │
 ├── app/
 │   └── streamlit_app.py              # Streamlit
+│
 ├── requirements.txt
 │
 └── report/
