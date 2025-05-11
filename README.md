@@ -5,8 +5,8 @@ This project aims to forecast future sales using historical data to optimize inv
 
 ## 📊 Objectives
 - Perform EDA to identify patterns and seasonality.
-- Build and evaluate time-series forecasting models (ARIMA, XGBoost, Prophet, etc).
-- Deploy the best-performing model using Streamlit or Flask.
+- Build and evaluate time-series forecasting model (XGBoost, Decision Tree, Random Forest, LR).
+- Deploy the best-performing model using Streamlit.
 
 ## 🧱 Project Structure
 ```
@@ -16,14 +16,18 @@ Sales-Forecasting-Project/
 │   └── processed/           # Cleaned & transformed datasets
 │
 ├── notebooks/
-│   ├── 1_EDA.ipynb
-│   ├── 2_Modeling.ipynb
-│   └── 4_Deployment.ipynb
-├── models/                 # Trained model files (pkl)
+│   ├── 1_preprocessing.ipynb 
+│   └── 2_modeling.ipynb
+│ 
+├── models/                  # Trained model files 
+│   ├── 1_decision_tree.pkl
+│   ├── 2_linear_regression_model.pkl
+│   └── 3_xgboost_model.pkl             
 │
 ├── app/
-│   └── app.py              # Streamlit
+│   └── streamlit_app.py              # Streamlit
 ├── requirements.txt
+│
 └── report/
     ├── Final_Report.pdf
     └── Final_Presentation.pptx
@@ -36,7 +40,7 @@ pip install -r requirements.txt
 
 ## ▶️ Running the App
 ```bash
-streamlit run app/app.py
+streamlit run streamlit_app.py
 ```
 
 ## 👥 Team Members
