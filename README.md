@@ -12,8 +12,8 @@ This project aims to forecast future sales using historical data to optimize inv
 ```
 Sales-Forecasting-Project/
 ├── data/
-│   ├── raw/                 # Raw dataset files
-│   └── processed/           # Cleaned & transformed datasets
+│   ├── 1_Superstore Dataset                # Raw dataset file
+│   └── 2_cleaned_superstore.csv           # Cleaned & transformed dataset
 │
 ├── notebooks/
 │   ├── 1_preprocessing.ipynb 
