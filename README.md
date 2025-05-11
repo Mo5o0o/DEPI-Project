@@ -13,19 +13,19 @@ This project aims to forecast future sales using historical data to optimize inv
 Sales-Forecasting-Project/
 ├── data/
 │   ├── 1_Superstore Dataset                # Raw dataset file
-│   └── 2_cleaned_superstore.csv           # Cleaned & transformed dataset
+│   └── 2_cleaned_superstore.csv            # Cleaned & transformed dataset
 │
 ├── notebooks/
 │   ├── 1_preprocessing.ipynb 
 │   └── 2_modeling.ipynb
 │ 
-├── models/                  # Trained model files 
+├── models/                                # Trained model files 
 │   ├── 1_decision_tree.pkl
 │   ├── 2_linear_regression_model.pkl
 │   └── 3_xgboost_model.pkl             
 │
 ├── app/
-│   └── streamlit_app.py              # Streamlit
+│   └── streamlit_app.py                   # Streamlit
 │
 ├── requirements.txt
 │
