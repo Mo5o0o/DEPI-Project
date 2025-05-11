@@ -10,7 +10,7 @@ This project aims to forecast future sales using historical data to optimize inv
 
 ## 🧱 Project Structure
 ```
-Sales-Forecasting-Project/
+Superstore-Sales-Analysis-main/
 ├── data/
 │   ├── 1_Superstore Dataset                # Raw dataset file
 │   └── 2_cleaned_superstore.csv            # Cleaned & transformed dataset
