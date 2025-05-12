@@ -43,7 +43,12 @@ pip install -r requirements.txt
 ```bash
 streamlit run streamlit_app.py
 ```
-https://depiapp-vpwfjn4zcim93ut6jjpadg.streamlit.app/
+
+### Application Description:
+**Intelligent Sales Forecasting System** uses machine learning techniques to predict future sales, helping businesses forecast demand and make better decisions for inventory and marketing strategies.
+
+<p>You can view and interact with the live application <a href="https://depiapp-vpwfjn4zcim93ut6jjpadg.streamlit.app/" target="_blank">here</a>.</p>
+
 
 ## 👥 Team Members
 - Member 1
