@@ -43,6 +43,7 @@ pip install -r requirements.txt
 ```bash
 streamlit run streamlit_app.py
 ```
+https://depiapp-vpwfjn4zcim93ut6jjpadg.streamlit.app/
 
 ## 👥 Team Members
 - Member 1
