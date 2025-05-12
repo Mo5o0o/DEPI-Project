@@ -211,7 +211,7 @@ def inject_custom_style():
 
 @st.cache_resource
 def load_model():
-    return joblib.load(r"C:\Users\bhbt\Desktop\Superstore-Sales-Analysis-main\model\xgboost_model.pkl")
+    return joblib.load(r"Superstore-Sales-Analysis-main\model\xgboost_model.pkl")
 
 model = load_model()
 
