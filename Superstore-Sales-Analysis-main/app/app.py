@@ -1,13 +1,19 @@
-import dash
-from dash import dcc, html, callback_context
-from dash.dependencies import Input, Output, State
-import pandas as pd
-import plotly.graph_objects as go
-import plotly.express as px
-from prophet import Prophet
-import numpy as np
-import os
-from datetime import datetime
+try:
+    import dash
+    from dash import dcc, html, callback_context
+    from dash.dependencies import Input, Output, State
+    import pandas as pd
+    import plotly.graph_objects as go
+    import plotly.express as px
+    from prophet import Prophet
+    import numpy as np
+    import os
+    from datetime import datetime
+except ImportError as e:
+    print(f"Error importing dependencies: {str(e)}")
+    print("Please install required packages using:")
+    print("pip install dash pandas plotly prophet numpy")
+    raise
 
 # Data Configuration
 DATA_CONFIG = {
@@ -37,6 +43,8 @@ app = dash.Dash(__name__,
         {"name": "viewport", "content": "width=device-width, initial-scale=1.0"}
     ]
 )
+
+# Enable the app to be imported by a WSGI server (e.g. gunicorn)
 server = app.server
 
 # Custom color scheme
@@ -53,7 +61,12 @@ def load_data():
         data_path = DATA_CONFIG['file_path']
         if not os.path.exists(data_path):
             print(f"Data file not found at: {data_path}")
-            return None
+            # Try alternative path for deployment
+            alt_path = os.path.join('1. data', 'processed', 'cleaned superstore dataset.csv')
+            if os.path.exists(alt_path):
+                data_path = alt_path
+            else:
+                return None
             
         df = pd.read_csv(data_path)
         df['Order Date'] = pd.to_datetime(df[DATA_CONFIG['columns']['order_date']])
@@ -960,6 +973,6 @@ app.index_string = '''
 '''
 
 if __name__ == '__main__':
-    # Use environment variable for port if available (for deployment)
+    # Get port from environment variable or use default
     port = int(os.environ.get("PORT", 8050))
     app.run_server(debug=False, host='0.0.0.0', port=port)
