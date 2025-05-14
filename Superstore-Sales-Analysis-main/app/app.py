@@ -17,7 +17,7 @@ except ImportError as e:
 
 # Data Configuration
 DATA_CONFIG = {
-    'file_path': os.path.join('1. data', 'processed', 'cleaned superstore dataset.csv'),
+    'file_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '1. data', 'processed', 'cleaned superstore dataset.csv'),
     'columns': {
         'order_date': 'Order Date',
         'sales': 'Sales',
@@ -62,7 +62,7 @@ def load_data():
         if not os.path.exists(data_path):
             print(f"Data file not found at: {data_path}")
             # Try alternative path for deployment
-            alt_path = os.path.join('1. data', 'processed', 'cleaned superstore dataset.csv')
+            alt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '1. data', 'processed', 'cleaned superstore dataset.csv')
             if os.path.exists(alt_path):
                 data_path = alt_path
             else:
