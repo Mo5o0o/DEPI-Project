@@ -29,7 +29,7 @@ Superstore-Sales-Analysis-main/
 │   └── dashboard.py                       # Dashboard
 ├── requirements.txt
 │
-└── report/
+└── Report/
     ├── Final_Report.pdf
     └── Final_Presentation.pptx
 ```
