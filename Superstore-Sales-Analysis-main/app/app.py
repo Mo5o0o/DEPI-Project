@@ -17,7 +17,7 @@ except ImportError as e:
 
 # Data Configuration
 DATA_CONFIG = {
-    'file_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '1. data', 'processed', 'cleaned superstore dataset.csv'),
+    'file_path': os.path.join('1. data', 'processed', 'cleaned superstore dataset.csv'),
     'columns': {
         'order_date': 'Order Date',
         'sales': 'Sales',
