@@ -55,5 +55,3 @@ streamlit run streamlit_app.py
 - Ahmed Mohamed Bedair Elbhbaty
 - Adel Tamer Adel Badran
 - Ezz El-Deen Ashraf Mohammed
-
-"""
