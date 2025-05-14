@@ -26,7 +26,7 @@ Superstore-Sales-Analysis-main/
 │
 ├── app/
 │   └── streamlit_app.py                   # Streamlit
-│
+│   └── dashboard.py                       # Dashboard
 ├── requirements.txt
 │
 └── report/
