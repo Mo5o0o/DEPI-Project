@@ -1,4 +1,4 @@
-README_CONTENT = """
+
 # Sales Forecasting and Optimization
 
 This project aims to forecast future sales using historical data to optimize inventory and marketing strategies.
