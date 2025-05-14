@@ -51,9 +51,9 @@ streamlit run streamlit_app.py
 
 
 ## 👥 Team Members
-- Member 1
-- Member 2
-- Member 3
-- Member 4
+- Ahmed Mohammed Elsayed
+- Ahmed Mohamed Bedair Elbhbaty
+- Adel Tamer Adel Badran
+- Ezz El-Deen Ashraf Mohammed
 
 """
